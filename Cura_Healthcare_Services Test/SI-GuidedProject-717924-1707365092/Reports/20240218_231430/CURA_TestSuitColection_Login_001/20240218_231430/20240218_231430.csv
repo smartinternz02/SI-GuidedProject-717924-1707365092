@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CURA_TestSuitColection_Login_001,Chrome 121.0.0.0,"Test Suit Collection for Loging in, then booking an appointment and confirming if it has been saved in the History with correct details.",,18-02-2024 23:14:35,18-02-2024 23:14:50,14.746s,PASSED
+,,,,,,,
+Test Cases/TC_CURA_LOGIN_001,Chrome 121.0.0.0,,,18-02-2024 23:14:35,18-02-2024 23:14:45,9.330s,PASSED
+"openBrowser("""")",Chrome 121.0.0.0,,,18-02-2024 23:14:36,18-02-2024 23:14:37,1.936s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 121.0.0.0,,,18-02-2024 23:14:37,18-02-2024 23:14:41,3.462s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_Login_OR/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 121.0.0.0,,,18-02-2024 23:14:41,18-02-2024 23:14:42,0.870s,PASSED
+"setText(findTestObject(""Object Repository/Cura Pages/CuraPage_Login_OR/Page_CURA Healthcare Service/input_username""), ""John Doe"")",Chrome 121.0.0.0,,,18-02-2024 23:14:42,18-02-2024 23:14:43,0.893s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Cura Pages/CuraPage_Login_OR/Page_CURA Healthcare Service/input_password""), ""g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM"")",Chrome 121.0.0.0,,,18-02-2024 23:14:43,18-02-2024 23:14:43,0.442s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_Login_OR/Page_CURA Healthcare Service/button_Login""))",Chrome 121.0.0.0,,,18-02-2024 23:14:43,18-02-2024 23:14:44,0.980s,PASSED
+"verifyElementPresent(findTestObject(""Cura Pages/CuraPage_Login_OR/Page_CURA Healthcare Service/h2_Make Appointment""), 0)",Chrome 121.0.0.0,,,18-02-2024 23:14:44,18-02-2024 23:14:45,0.405s,PASSED
+,,,,,,,
+Test Cases/TC_CURA_MakeAppointementValidation_002,Chrome 121.0.0.0,Validating whether an authorised user is able to Book an Appointment after successful login,,18-02-2024 23:14:45,18-02-2024 23:14:50,5.190s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center        _5b4107""), ""Hongkong CURA Healthcare Center"", true)",Chrome 121.0.0.0,,,18-02-2024 23:14:45,18-02-2024 23:14:46,0.946s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/input_hospital_readmission""))",Chrome 121.0.0.0,,,18-02-2024 23:14:46,18-02-2024 23:14:46,0.320s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/input_programs""))",Chrome 121.0.0.0,,,18-02-2024 23:14:46,18-02-2024 23:14:46,0.331s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/input_visit_date""))",Chrome 121.0.0.0,,,18-02-2024 23:14:46,18-02-2024 23:14:47,0.342s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/th_""))",Chrome 121.0.0.0,,,18-02-2024 23:14:47,18-02-2024 23:14:47,0.548s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/td_13""))",Chrome 121.0.0.0,,,18-02-2024 23:14:47,18-02-2024 23:14:48,0.543s,PASSED
+"setText(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/textarea_comment""), ""Regular Health Checkup"")",Chrome 121.0.0.0,,,18-02-2024 23:14:48,18-02-2024 23:14:49,0.874s,PASSED
+"click(findTestObject(""Object Repository/Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/button_Book Appointment""))",Chrome 121.0.0.0,,,18-02-2024 23:14:49,18-02-2024 23:14:49,0.703s,PASSED
+"verifyElementPresent(findTestObject(""Cura Pages/CuraPage_MakeAppointementValidation_OR/Page_CURA Healthcare Service/h2_Appointment Confirmation""), 0)",Chrome 121.0.0.0,,,18-02-2024 23:14:49,18-02-2024 23:14:50,0.420s,PASSED
+closeBrowser(),Chrome 121.0.0.0,,,18-02-2024 23:14:50,18-02-2024 23:14:50,0.094s,PASSED
